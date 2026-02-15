@@ -5,7 +5,7 @@ import pandas as pd
 def fetch_points():
     conn = sqlite3.connect('football.db')
     cursor = conn.cursor()
-    query = """
+    query = """ 
         SELECT *
         FROM teams;
     """
